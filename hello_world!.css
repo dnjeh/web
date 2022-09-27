@@ -1,0 +1,9 @@
+.container .header h1 {
+  /*주석이애요*/
+  color: darkturquoise;
+}
+.container .main p {
+  /*클래스 지정?*/
+  color: cyan;
+  font-size: 1.5rem; /*1rem=16px, 일반 텍스트는 1rem임*/
+}

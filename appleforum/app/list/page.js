@@ -18,11 +18,6 @@ export default async function List() {
                 )
             })
         }
-        <div className="list-item"><p>글 작성 : </p>
-            <form action="/api/write" input name="title" method="POST">
-                <button type="submit">제출</button>
-            </form>
-        </div>
         </div>
     )
 }

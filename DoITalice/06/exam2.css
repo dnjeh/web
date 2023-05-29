@@ -42,7 +42,6 @@ ul li:nth-child(3) a {
 }
 ul li:nth-child(4) a {
   background-color: rgb(145, 54, 92);
-  display: none;
 }
 ul li:nth-child(5) a {
   background-color: rgb(145, 113, 54);

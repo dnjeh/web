@@ -10,7 +10,7 @@ export default async function Edit(props) {
                 <input name="title" defaultValue={result.title}/>
                 <input name="content" defaultValue={result.content}/>
                 <input name="id" defaultValue={props.params.id} style={{"display" : "none"}}/>
-                <button type="submit">제출</button>
+                <button type="submit">수정</button>
             </form>
         </div>
     )

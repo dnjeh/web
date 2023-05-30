@@ -14,13 +14,24 @@ export default function ListItem({result}) {
                         <h4>{ai.title}</h4>
                     </Link>
                     <Link href={`/edit/${ai._id}`}>✏</Link>
-                    <span onClick={()=>{
-                        fetch("/api/post/del", {
+                    <span onClick={(e)=>{
+                        /*fetch("/api/post/del", {
                             method : "POST", 
                             body : ai._id
                         }).then(()=>{
-                            console.log("완료")
+                            e.target.parentElement.style.opacity = 0
+                            setTimeout(()=>{
+                                e.target.parentElement.style.display = "none"
+                            })
+                        })*/
+
+                        fetch(`api/post/delete?id=${ai._id}`).then(()=>{
+                            e.target.parentElement.style.opacity = 0
+                            setTimeout(()=>{
+                                e.target.parentElement.style.display = "none"
+                            }, 1000)
                         })
+                        //fetch("api/apc/어쩌구")
                     }}>💫</span>
                     <p>{ai.content}</p>
                 </div>

@@ -3,20 +3,16 @@
 import Link from "next/link"
 import { useEffect } from "react"
 
-export default function ListItem(props) {
-    console.log(props)
+export default function ListItem({result}) {
     return (
     <div>
         {
-        props.result.map((ai, i) => {
+        result.map((ai, i) => {
             return (
                 <div className="list-item" key={i}>
                     <Link href={`/detail/${ai._id}`}>
                         <h4>{ai.title}</h4>
                     </Link>
-                    {
-                        props.email==ai.author?
-                        <>
                     <Link href={`/edit/${ai._id}`}>✏</Link>
                     <span onClick={(e)=>{
                         /*fetch("/api/post/del", {
@@ -36,10 +32,7 @@ export default function ListItem(props) {
                             }, 1000)
                         })
                         //fetch("api/apc/어쩌구")
-                    }}>💫</span></>
-                    :
-                    <></>
-                }
+                    }}>💫</span>
                     <p>{ai.content}</p>
                 </div>
                 )

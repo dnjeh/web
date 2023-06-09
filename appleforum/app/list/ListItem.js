@@ -1,10 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function ListItem(props) {
     console.log(props)
+    let [Iine, setIine] = useState();
     return (
     <div>
         {
@@ -12,7 +13,7 @@ export default function ListItem(props) {
             return (
                 <div className="list-item" key={i}>
                     <Link href={`/detail/${ai._id}`}>
-                        <h4>{ai.title}</h4>
+                        <h4>{ai.title} ({ai.Iine})</h4>
                     </Link>
                     {
                         props.email==ai.author?

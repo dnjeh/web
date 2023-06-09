@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrap {
+    background-color: rgb(231, 215, 250);
+
+    height: 100vh;
+    padding: 100px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    padding: 0 20px;
+    background-color: #fff;
+    line-height: 1.5;
+    display: inline-block;
+    width: auto;
+}
+
+.modal {
+    border: 3px solid rgb(98, 74, 185);
+    background-color: #000;
+    position: fixed;
+    color: #fff;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal.Open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_wrap {
+    text-align: right;
+}

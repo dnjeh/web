@@ -1,17 +1,17 @@
 @charset "utf-8";
 
 /*초기 설정*/
-*{
+* {
   margin: 0;
   padding: 0;
   list-style:none;
   box-sizing: border-box;
 }
-body{
+body {
   background: #ffffff;
   color:#222328;
 }
-a{
+a {
   text-decoration:none;
   display:block;
 }
@@ -41,7 +41,7 @@ header {
   align-items: center; /* 수직 가운데 정렬 */
 }
 /*로고이미지*/
-.logo > img{
+.logo > img {
   width:200px; /*지시사항에 적힌대로 width값 */
   height:40px; /*지시사항에 적힌대로 height값 */
 }
@@ -55,17 +55,17 @@ header {
   align-items:center;
   position:relative; /*subMenu때문에 반드시 필요*/
 }
-.mainMenu > a{
+.mainMenu > a {
   width:25%;
   padding:20px 0;
   text-align: center;
   color:#ffffff;
 }
-.mainMenu > a:hover{
+.mainMenu > a:hover {
   background: rgba(255,255,255, 0.1);
 }
 
-.subMenu{
+.subMenu {
   width:800px; /*메인메뉴 위치랑 동일하게*/
   display:flex;
   justify-content: space-between;
@@ -75,15 +75,15 @@ header {
   top:100px; /*header 높이 만큼 내려옴*/
   z-index:1;
 }
-.subMenu > ul{
+.subMenu > ul {
   width:25%;
 }
-.subMenu > ul > li > a{
+.subMenu > ul > li > a {
   text-align: center;
   padding:10px 0;
   color:#723ffb;
 }
-.subMenu > ul > li > a:hover{
+.subMenu > ul > li > a:hover {
   background: rgba(255,255,255, 0.1);
   color:#ffffff;
 }
@@ -101,7 +101,9 @@ header {
   top:0;
   left:0;
 }
-.imgSlide a > img {height:100%;}
+.imgSlide a > img {
+  height:100%;
+}
 .imgText{
   position:absolute;
   top:40%;
@@ -125,11 +127,17 @@ header {
   position: relative; /* 탭메뉴의 콘텐츠 영역 absolute 때문에 넣어줌 */
 }
 /*컨텐츠 공통사항*/
-.contents div{width:33.3%;}
-.contents > div:nth-of-type(2){margin:0 10px;}
+.contents div {
+  width:33.3%;
+}
+.contents > div:nth-of-type(2) {
+  margin:0 10px;
+}
 
 /*탭메뉴 : 공지사항 갤러리 */
-.tabMenu{ display:flex;}
+.tabMenu { 
+  display:flex;
+}
 .tabMenu>li>a{
 	padding:0 10px;
 	min-width: 85px;
@@ -139,12 +147,17 @@ header {
 	background:#eeeeee;
 	border:1px solid #dddddd;
 }
-.tabMenu>li>a:hover{ background-color:#eeeeee;}
+.tabMenu>li>a:hover { 
+  background-color:#eeeeee;
+}
 
 /* 공지사항과 갤러리 탭 맞닿는 부분에 보더를 없애줌 */
 .tabMenu>li:first-child a{border-right:none;}
 /* 활성화된 탭의 스타일 */
-.tabMenu>li.active>a{ font-weight: bold; background-color:#ffffff;}
+.tabMenu>li.active>a {
+ font-weight: bold; 
+ background-color:#ffffff;
+}
 /*탭 콘텐츠 영역 스타일*/
 .tabBG{
 	position:absolute;
@@ -158,35 +171,48 @@ header {
 	z-index:1;
 }
  /* 공지사항 */
-.notice ul{ padding:20px 0;}
+.notice ul { 
+  padding:20px 0;
+}
 .notice ul li{ padding:8px 20px;
 	margin:0 10px;
   font-size:14px;
 
 }
 /*공지사항 중 2배수 리스트 스타일*/
-.notice li:nth-child(even){ background:rgba(114, 63, 251, 0.1); }
-.notice li:hover{color:#222328;background:rgba(246,182,44, 0.1);}
-.notice li span {float:right;}  /* 날짜 오른쪽 정렬 */
+.notice li:nth-child(even) { 
+  background:rgba(114, 63, 251, 0.1); 
+}
+.notice li:hover {
+  color:#222328;
+  background:rgba(246,182,44, 0.1);
+}
+.notice li span {
+  float:right;
+}  /* 날짜 오른쪽 정렬 */
 
-.gallery{	left:0; }
+.gallery {	
+  left:0; 
+}
 .gallery ul {
 	display: flex;
   justify-content: space-around;
 	align-items: center;
   height:100%;  /*높이 값이 있어야 수직 정렬 됨*/
 }
-.gallery li:hover{ opacity:0.5; }
+.gallery li:hover { 
+  opacity:0.5; 
+}
 
 /*배너와 바로가기 공통 */
-.banner, .direct{
+.banner, .direct {
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .banner > a,
-.direct > a{
+.direct > a {
   width:100px;
   padding:14px 0;
   text-align: center;
@@ -219,14 +245,27 @@ footer {
   background: #222328;
 }
 /* 하단 공통 */
-footer div{display: flex; justify-content: center; align-items: center;}
+footer div {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
 /* 로고 */
-footer div:nth-child(1){width: 20%; opacity: 0.2;}
+footer div:nth-child(1) {
+  width: 20%; opacity: 0.2;
+}
 /* copyright */
-footer div:nth-child(2){width: 60%; color: #777777;}
+footer div:nth-child(2) {
+  width: 60%; color: #777777;
+}
 /* SNS */
-footer div:nth-child(3){width: 20%; justify-content: space-around;}
-footer div:nth-child(3) img{border-radius: 50%;}
+footer div:nth-child(3) {
+  width: 20%; 
+  justify-content: space-around;
+}
+footer div:nth-child(3) img {
+  border-radius: 50%;
+}
 
 /* 레이어 팝업  */
 #modalWrap{
@@ -266,4 +305,7 @@ footer div:nth-child(3) img{border-radius: 50%;}
   font-weight: bold;
   cursor:pointer;
 }
-.btn:hover{background:rgba(114, 63, 251, 0.2); color:#723ffb;}
+.btn:hover {
+  background:rgba(114, 63, 251, 0.2);
+  color:#723ffb;
+}

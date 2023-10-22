@@ -5,6 +5,8 @@ import LoginBtn from './LoginBtn'
 import LogoutBtn from './LogoutBtn'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/pages/api/auth/[...nextauth].js'
+import { cookies } from 'next/dist/client/components/headers'
+import DarkMode from '@/DarkMode'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,11 +16,16 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
+  let cookie = cookies().get('mode')
   let session = await getServerSession(authOptions);
   console.log(session);
   return (
     <html lang="en">
-      <body>
+      <body className={
+        cookie != undefined && cookie.value == 'dark' 
+          ? 'dark-mode'
+          : ''
+      }>
         <div className="navbar">
           <Link href="/" className="logo">Appleforum</Link>
           <Link href="/list">List</Link>
@@ -33,6 +40,7 @@ export default async function RootLayout({ children }) {
           :
           <LoginBtn></LoginBtn>
           } 
+          <DarkMode/>
         </div>
         {children}</body>
     </html>

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+body {
+    width: 1000px;
+    height: 650px;
+    background-color: whitesmoke;
+}
+
+.nav {
+    float: left;
+    position: absolute;
+    width: 200px;
+    height: 650px;
+    background-color: aquamarine;
+}
+
+.log {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    top:100px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu > li {
+    float: left;
+    width: 180px;
+}
+
+.menu > li > a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: beige;
+    color: black;
+}
+
+.menu > li > a:hover {
+    background-color: black;
+    color: beige;
+}
+
+.subm {
+    width: 180px;
+    height: 100%;
+    left: 180px;
+    top: 0px;
+    position: absolute;
+    background-color: blanchedalmond;
+    display: none;
+    z-index: 1;
+}
+
+.subm > li > a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.subm > li > a:hover {
+    background-color: #999999;
+    color: #ffff00;
+}
+
+.wrap2 {
+    float: right;
+}
+
+.slide {
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+
+.slide > a {
+    display: block;
+    position: absolute;
+}
+
+.slide span {
+    width: 160px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    left: 40%;
+    top: 45%;
+    position: absolute;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.wrap3 {
+    width: 800px;
+    height: 200px;
+}
+.tab {
+    float: left;
+    width: 300px;
+}
+.c1 {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.c2 {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.c2 h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.c2 ul li {
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+.c2 img {
+    width: 80px;
+    height: 80px;
+}
+.c2 li:hover {
+    opacity: 0.5;
+}
+.c1 h4 {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.c1 ul {
+    float: left;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.c1 li span {
+    float: right;
+}
+.c1 li:hover {
+    font-weight: bold;
+}
+.c3 {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+.c3 img {
+    float: right;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+.sct {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 85px;
+    margin-left: 50px;
+}
+
+.wrap4 {
+    width: 800px;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.cp {
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+.fam {
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active {
+    display: block;
+}
+.modalis {
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    background-color: aliceblue;
+}
+.uptitle {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn {
+    width: 80px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

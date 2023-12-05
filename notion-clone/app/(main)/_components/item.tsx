@@ -8,6 +8,7 @@ import { useMutation } from "convex/react"
 import { api } from "@/convex/_generated/api"
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import { DropdownMenu } from "@/components/ui/dropdown-menu";
 
 interface ItemProps {
     id?: Id<"documents">;
@@ -107,6 +108,9 @@ export const Item = ({
             )}
             {!!id && (
                 <div className="ml-auto flex items-center gap-x-2">
+                    <DropdownMenu>
+                        
+                    </DropdownMenu>
                     <div
                         role="button"
                         onClick={onCreate}

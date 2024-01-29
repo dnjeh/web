@@ -1,8 +1,8 @@
-export default function asjkld({ children }) {
-    return (
-      <div>
-        HomeLayout
-        {children}
-      </div>
-    )
-  }
+
+export default function Profile() {
+  return (
+    <main>
+      프로필
+    </main>
+  )
+}

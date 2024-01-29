@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <main>
-      탐색
+      게시글 상세
     </main>
   )
 }

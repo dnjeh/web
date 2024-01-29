@@ -1,7 +1,8 @@
 export default function Page() {
   return (
     <main>
-      탐색
+      로그인 모달
     </main>
-  )
+  );
 }
+

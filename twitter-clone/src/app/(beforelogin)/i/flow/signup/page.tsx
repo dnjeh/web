@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <main>
-      탐색
+      회원가입모달
     </main>
-  )
+  );
 }

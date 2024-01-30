@@ -1,0 +1,18 @@
+"use client";
+
+import style from "./logOutButton.module.css";
+export default function LogOutButton() {
+  const me = { id: "asda", image: "/5Udwvqim.jpg", nickname: "\\0" };
+  const onLogout = () => {};
+  return (
+    <button className={style.logOutButton} onClick={onLogout}>
+      <div className={style.logOutUserImage}>
+        <img src={me.image} alt={me.id} />
+      </div>
+      <div className={style.logOutUserName}>
+        <div>{me.nickname}</div>
+        <div>@{me.id}</div>
+      </div>
+    </button>
+  );
+}

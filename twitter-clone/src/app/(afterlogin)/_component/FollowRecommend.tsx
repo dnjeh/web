@@ -5,7 +5,7 @@ export default function FollowRecommend() {
   const user = {
     image: "@/../5Udwvqim.jpg",
     nickname: "\\0",
-    id: "null"
+    id: "artificalnull"
   }
   const onFollow = () => {};
   return (

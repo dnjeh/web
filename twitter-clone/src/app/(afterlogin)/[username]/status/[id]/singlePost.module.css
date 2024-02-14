@@ -10,8 +10,8 @@
     align-items: stretch;
 }
 
-.main:nth-child(3) {
-    margin-top: 53px;
+.dummy {
+    height: 53px;
 }
 
 .header {

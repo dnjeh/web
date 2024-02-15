@@ -10,7 +10,11 @@ import { faker } from "@faker-js/faker";
 dayjs.extend(relativeTime);
 dayjs.locale("ko");
 
-export default function Post() {
+interface Props {
+  noImage?: boolean;
+}
+
+export default function Post({noImage}: Props) {
   const target = {
     postId: 1028,
     User: {
@@ -22,7 +26,7 @@ export default function Post() {
     content: "Do you know what are you watching?",
     Images: [] as any[],
   };
-  if (Math.random() > 0.5) {
+  if (Math.random() > 0.5 && !noImage) {
     target.Images.push({ imageId: 1, link: faker.image.urlLoremFlickr() });
   }
   return (

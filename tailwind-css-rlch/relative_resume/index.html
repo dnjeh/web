@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #skip {
+        position: relative;
+      }
+      #skip a {
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 138px;
+        background: #333;
+        text-align: center;
+      }
+      #skip a:focus {
+        top: 0px;
+        border: 2px solid #4ec53d;
+      }
+      #skip span {
+        display: inline-block;
+        padding: 2px 6px 0 0;
+        font-size: 13px;
+        line-height: 26px;
+        color: #fff;
+        letter-spacing: -1px;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="sr-only">이력서</h1>
+    <div id="skip">
+      <a href="#newsstand">
+        <span>뉴스스탠드 바로가기</span>
+      </a>
+      <a href="#themecast">
+        <span>주제별캐스트 바로가기</span>
+      </a>
+      <a href="#timesquare">
+        <span>타임스퀘어 바로가기</span>
+      </a>
+      <a href="#account">
+        <span>로그인 바로가기</span>
+      </a>
+    </div>
+    <div class="container lg:p-20 p-8 space-y-4">
+      <div class="lg:flex">
+        <div class="lg:w-1/4">
+          <img
+            src="profile.png"
+            alt="김 이름의 사진"
+            class="rounded-full h-32 w-32 lg:h-48 lg:w-48"
+          />
+        </div>
+        <div class="lg:w-3/4">
+          <div class="text-5xl lg:text-6xl">
+            <span>김</span><span class="text-[#3eaf0e]">이름</span>
+          </div>
+          <div class="mt-6 text-gray-400 font-bold">
+            Absolute, Basefont, Canvas
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex">
+        <div class="lg:w-1/4 flex-col flex space-y-6">
+          <div class="text-2xl text-[#3faf0e] font-bold">
+            <span
+              class="bg-[#3eaf0e] text-white inline-block w-8 h-8 rounded text-center"
+              >1</span
+            >
+            Details
+          </div>
+          <div>
+            <div class="text-xl">Github</div>
+            <a class="text-gray-400" href="https://github.com/dnjeh"
+              >https://github.com/dnjeh</a
+            >
+          </div>
+          <div class="space-y-1">
+            <div class="text-xl">Pick Project</div>
+            <ul class="pl-10 list-disc space-y-1">
+              <li><a class="text-gray-400" href="#">1만 시간의 법칙</a></li>
+              <li><a class="text-gray-400" href="#">벤딩머신</a></li>
+              <li><a class="text-gray-400" href="#">랜딩페이지</a></li>
+              <li><a class="text-gray-400" href="#">감귤마켓</a></li>
+            </ul>
+          </div>
+          <div class="space-y-1">
+            <div class="text-xl">Homepage And Service</div>
+            <a class="text-gray-400 inline-block" href="http://www.paulab.co.kr"
+              >http://www.paulab.co.kr
+            </a>
+            <a
+              class="text-gray-400 inline-block"
+              href="https://www.livecorona.co.kr"
+              >https://www.livecorona.co.kr</a
+            >
+            <a
+              class="text-gray-400 inline-block"
+              href="https://www.stopwar.co.kr"
+              >https://www.stopwar.co.kr</a
+            >
+          </div>
+          <div>
+            <div class="text-xl">Skill</div>
+            <ul class="pl-10 list-disc">
+              <li>1bar-Project 9개 이하</li>
+              <li>2bar-Project 10개 이상</li>
+              <li>3bar-즉시 투입 가능</li>
+            </ul>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">Python</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">HTML</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">CSS</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">JS</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">Django</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+            <div class="flex gap-2 mt-2 items-center">
+              <div class="w-1/6 mr-3">Java</div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+              <div class="w-1/6 bg-[#3EAF0E] h-2 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-3/4  lg:m-0 mt-4">
+          <div>
+            <div class="text-2xl text-[#3faf0e] font-bold">
+              <span
+                class="bg-[#3eaf0e] text-white inline-block w-8 h-8 rounded text-center"
+                >2</span
+              >
+              Profile
+            </div>
+            <div class="mt-8 space-y-2">
+                <div>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+                  voluptas praesentium, neque nesciunt officia ab earum illum
+                  molestiae eum iste reprehenderit modi dolorum voluptatem ex
+                  inventore pariatur nisi sunt aliquid!
+                </div>
+                <div>
+                  Exercitationem, eos! Molestiae tempore sequi nulla assumenda.
+                  Error, voluptates fugiat modi cum eveniet provident
+                  consequatur eaque mollitia hic. Commodi totam numquam cum,
+                  tempora omnis et earum sed praesentium modi sunt.
+                </div>
+            </div>
+          </div>
+          <div class="mt-8 flex-col space-y-8 flex">
+            <div class="text-2xl text-[#3faf0e] font-bold">
+              <span
+                class="bg-[#3eaf0e] text-white inline-block w-8 h-8 rounded text-center"
+                >3</span
+              >
+              Project History
+            </div>
+            <div class="flex space-y-2 flex-col">
+              <div class="border-l-4 border-gray-300 pl-2 text-xl">Weniv world<span class="text-sm text-gray-500"> 2017.03. - 2021.11</span></div>
+              <div>
+                Used Skill : <span class="text-blue-500">#Django #Python #HTML #CSS #JS</span>
+              </div>
+              <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr">http://www.paullab.co.kr</a></div>
+              <div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dignissimos esse, corrupti nisi harum expedita consectetur eum porro itaque, modi ipsam! Mollitia laborum quia impedit! Quibusdam quasi asperiores beatae.</div>
+                <div>Omnis mollitia quaerat provident quasi nemo iusto fugiat quisquam veniam? Delectus voluptates aliquam asperiores temporibus? Impedit consequuntur, asperiores quaerat, porro repellat repellendus architecto recusandae vel odio dignissimos perspiciatis doloribus delectus.</div>
+                <div>Quod qui maxime magni dolore obcaecati neque aut debitis? Repellendus magnam veniam animi voluptatum. Similique perspiciatis qui, vero atque architecto molestiae corrupti consequatur dolore corporis. Recusandae voluptatum dicta saepe suscipit?</div>
+                <div>Iure a provident dolorem nostrum architecto illo facere neque possimus eligendi quas atque reprehenderit perferendis consequuntur animi non, accusantium deserunt maxime cum quia distinctio? Sint vero quisquam eius reprehenderit autem.</div>
+              </div>
+            </div>
+            <div class="flex space-y-2 flex-col">
+              <div class="border-l-4 border-gray-300 pl-2 text-xl">Weniv world<span class="text-sm text-gray-500"> 2017.03. - 2021.11</span></div>
+              <div>
+                Used Skill : <span class="text-blue-500">#Django #Python #HTML #CSS #JS</span>
+              </div>
+              <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr">http://www.paullab.co.kr</a></div>
+              <div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dignissimos esse, corrupti nisi harum expedita consectetur eum porro itaque, modi ipsam! Mollitia laborum quia impedit! Quibusdam quasi asperiores beatae.</div>
+                <div>Omnis mollitia quaerat provident quasi nemo iusto fugiat quisquam veniam? Delectus voluptates aliquam asperiores temporibus? Impedit consequuntur, asperiores quaerat, porro repellat repellendus architecto recusandae vel odio dignissimos perspiciatis doloribus delectus.</div>
+                <div>Quod qui maxime magni dolore obcaecati neque aut debitis? Repellendus magnam veniam animi voluptatum. Similique perspiciatis qui, vero atque architecto molestiae corrupti consequatur dolore corporis. Recusandae voluptatum dicta saepe suscipit?</div>
+                <div>Iure a provident dolorem nostrum architecto illo facere neque possimus eligendi quas atque reprehenderit perferendis consequuntur animi non, accusantium deserunt maxime cum quia distinctio? Sint vero quisquam eius reprehenderit autem.</div>
+              </div>
+            </div>
+            <div class="flex space-y-2 flex-col">
+              <div class="border-l-4 border-gray-300 pl-2 text-xl">Weniv world<span class="text-sm text-gray-500"> 2017.03. - 2021.11</span></div>
+              <div>
+                Used Skill : <span class="text-blue-500">#Django #Python #HTML #CSS #JS</span>
+              </div>
+              <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr">http://www.paullab.co.kr</a></div>
+              <div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dignissimos esse, corrupti nisi harum expedita consectetur eum porro itaque, modi ipsam! Mollitia laborum quia impedit! Quibusdam quasi asperiores beatae.</div>
+                <div>Omnis mollitia quaerat provident quasi nemo iusto fugiat quisquam veniam? Delectus voluptates aliquam asperiores temporibus? Impedit consequuntur, asperiores quaerat, porro repellat repellendus architecto recusandae vel odio dignissimos perspiciatis doloribus delectus.</div>
+                <div>Quod qui maxime magni dolore obcaecati neque aut debitis? Repellendus magnam veniam animi voluptatum. Similique perspiciatis qui, vero atque architecto molestiae corrupti consequatur dolore corporis. Recusandae voluptatum dicta saepe suscipit?</div>
+                <div>Iure a provident dolorem nostrum architecto illo facere neque possimus eligendi quas atque reprehenderit perferendis consequuntur animi non, accusantium deserunt maxime cum quia distinctio? Sint vero quisquam eius reprehenderit autem.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -20,4 +20,12 @@ export const handlers = [
       }
     })
   }),
+  http.post("/api/users", () => {
+    return new HttpResponse(JSON.stringify("ok"), {
+      headers: {
+        "Set-Cookie": "connect.sid=;HttpOnly;Path=/;Max-Age=0"
+      }
+    })
+  }),
+  
 ];

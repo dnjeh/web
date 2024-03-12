@@ -1,5 +1,6 @@
 "use server";
 
+import { signIn } from "@/auth";
 import { redirect } from "next/navigation";
 
 export default async (prevState: {message: string | undefined}, formData: FormData) => {
@@ -31,6 +32,11 @@ export default async (prevState: {message: string | undefined}, formData: FormDa
     }
     //console.log(await response.json())
     f = true;
+    await signIn("credentials", {
+      username: formData.get("id"),
+      password: formData.get("password"),
+      redirect: false,
+    });
   } catch (err) {
     console.error(err);
     return;

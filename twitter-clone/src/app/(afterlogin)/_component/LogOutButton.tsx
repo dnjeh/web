@@ -1,17 +1,25 @@
 "use client";
 
+import { signOut, useSession } from "next-auth/react";
 import style from "./logOutButton.module.css";
+import { useRouter } from "next/navigation";
 export default function LogOutButton() {
-  const me = { id: "asda", image: "/5Udwvqim.jpg", nickname: "\\0" };
-  const onLogout = () => {};
+  const router = useRouter();
+  const {data: me} =useSession();
+  const onLogout = () => {
+    signOut({redirect: false}).then(()=>{
+      router.replace('/');
+    })
+  };
+  if(!me?.user) return null;
   return (
     <button className={style.logOutButton} onClick={onLogout}>
       <div className={style.logOutUserImage}>
-        <img src={me.image} alt={me.id} />
+        <img src={me.user?.image as string} alt={me.user?.id} />
       </div>
       <div className={style.logOutUserName}>
-        <div>{me.nickname}</div>
-        <div>@{me.id}</div>
+        <div>{me.user?.name}</div>
+        <div>@{me.user?.id}</div>
       </div>
     </button>
   );

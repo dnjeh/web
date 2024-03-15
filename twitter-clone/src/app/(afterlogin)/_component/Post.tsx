@@ -25,7 +25,6 @@ export default function Post({noImage, post}: Props) {
       target.Images.push({ imageId: i, link: faker.image.urlLoremFlickr() });
     }
   }*/
-  console.log(target);
   return (
     <PostArticle post={target}>
       <div className={style.postWrapper}>

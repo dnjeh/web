@@ -7,32 +7,25 @@ import ActionButtons from "./ActionButtons";
 import PostArticle from "./PostArticle";
 import { faker } from "@faker-js/faker";
 import PostImages from "./PostImages";
+import { Post } from "@/model/post";
 
 dayjs.extend(relativeTime);
 dayjs.locale("ko");
 
 interface Props {
   noImage?: boolean;
+  post: Post;
 }
 
-export default function Post({noImage}: Props) {
-  const target = {
-    postId: 1028,
-    User: {
-      id: "null",
-      image: "./yRsRRjGO.jpg",
-      nickname: "asd",
-    },
-    createdAt: new Date(),
-    content: "Do you know what are you watching?",
-    Images: [] as any[],
-  };
-  if (!noImage) {
+export default function Post({noImage, post}: Props) {
+  const target = post;
+  /*if (!noImage) {
     let num=Math.round(Math.random()*4);
     for(let i=1;i<=num;i++) {
       target.Images.push({ imageId: i, link: faker.image.urlLoremFlickr() });
     }
-  }
+  }*/
+  console.log(target);
   return (
     <PostArticle post={target}>
       <div className={style.postWrapper}>
